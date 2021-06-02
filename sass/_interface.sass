@@ -1,0 +1,52 @@
+*
+  box-sizing: border-box
+body
+  +reg
+  background-color: $secondary
+img 
+  max-width: 100%
+.container
+  width: 1170px
+  margin: auto
+@media (max-width: 1200px)
+  .container
+    max-width: 760px
+    width: 95%
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 90%
+button
+  border-radius: 10px
+  background-color: $main-color
+  border: none
+  padding: 18px 30px
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+    +bold
+    padding: 18px 28.1px
+.section
+  padding: 90px 0
+  &-title
+    max-width: 600px
+    text-align: center
+    font-size: 24px
+    +bold
+  &_subtitle
+    font-size: 16px
+.input
+  border-radius: 10px
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer
+.error 
+  border: 1px solid red
+#username-error,#phone-error
+  border: none
+input 
+  outline: none

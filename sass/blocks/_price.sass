@@ -1,0 +1,65 @@
+.price 
+  &__title
+    margin: auto
+    margin-bottom: 58px
+  &__subtitle
+    text-align: center
+    margin-bottom: 59px
+  &__card
+    margin-bottom: 30px
+.card
+  .img-align
+    display: block
+  text-align: center
+  border: 1px solid $border-color
+  transition: 0.2s
+  &:hover
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+    .card__image::before
+      opacity: 1
+  &__text
+    padding: 40px
+  &__title 
+    margin-top: 0
+  &__image
+    position: relative
+     transition: 0.2s
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+      width: 100%
+      height: 100%
+      opacity: 0
+      transition: 0.2s
+     
+  &s
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__link
+    display: inline-block
+    +bold
+    text-decoration: none
+    color: $text-color
+    font-size: 16px
+    position: relative
+    &:hover
+      &::after
+        height: 13px
+        
+    &::after
+      position: absolute
+      left: 0
+      bottom: -4px
+      content: ''
+      width: 100%
+      height: 3px
+      display: block
+      background-color: $main-color
+      z-index: -1
+      transition: 0.2s
+      

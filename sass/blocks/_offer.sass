@@ -1,0 +1,35 @@
+.offer
+  background: url('../img/offer/offer-bg.png') no-repeat
+  background-size: contain
+  background-position: center right
+  position: relative
+  &::before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: #ffffff
+    top: 0
+    left: 0
+  &-block
+    width: 50%
+    padding-right: 92px
+    position: relative
+  &__title
+    text-align: left
+    max-width: 370px
+    line-height: 35px
+  &__subtitle
+    font-size: 16px
+    max-width: 250px
+    display: block
+    margin: 24px 0 30px 0
+  &__input
+    margin-right: 10px
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 9px
+  &__button
+    width: 100%
+    min-height: 70px
